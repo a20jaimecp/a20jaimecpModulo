@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_restaurant_burguer,access.restaurant.burguer,model_restaurant_burguer,,1,1,1,1
+access_restaurant_pizzas,access.restaurant.pizzas,model_restaurant_pizzas,,1,1,1,1
+access_restaurant_hotdog,access.restaurant.hotdog,model_restaurant_hotdog,,1,1,1,1
+access_restaurant_sandwich,access.restaurant.sandwich,model_restaurant_sandwich,,1,1,1,1
+access_restaurant_other,access.restaurant.other,model_restaurant_other,,1,1,1,1
+access_restaurant_combo,access.restaurant.combo,model_restaurant_combo,,1,1,1,1
+

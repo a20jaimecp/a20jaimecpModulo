@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_restaurant_burguer_form" model="ir.ui.view">
+        <field name="name">restaurant.burguer.form</field>
+        <field name="model">restaurant.burguer</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="description"/>
+                        </group>
+                        <group>
+                            <field name="meet"/>
+                            <field name="sauces"/>
+                            <field name="price"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_restaurant_burguer_kanban" model="ir.ui.view">
+        <field name="name">restaurant.burguer.kanban</field>
+        <field name="model">restaurant.burguer</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="id"/>
+                <field name="name"/>
+                <field name="description"/>
+                <field name="price"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <ul>
+                                    <li>
+                                        <field name="name"/>
+                                        <field name="price"/>
+                                    </li>
+                                    <li>
+                                        <field name="description"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="view_restaurant_burguer_tree" model="ir.ui.view">
+        <field name="name">restaurant.burguer.tree</field>
+        <field name="model">restaurant.burguer</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="description"/>
+                <field name="price"/>
+            </tree>
+        </field>
+    </record>
+
+
+
+
+
+    <record id="view_restaurant_pizzas_form" model="ir.ui.view">
+        <field name="name">restaurant.pizzas.form</field>
+        <field name="model">restaurant.pizzas</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="description"/>
+                        </group>
+                        <group>
+                            <field name="masa"/>
+                            <field name="price"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_restaurant_pizzas_kanban" model="ir.ui.view">
+        <field name="name">restaurant.pizzas.kanban</field>
+        <field name="model">restaurant.pizzas</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="id"/>
+                <field name="name"/>
+                <field name="description"/>
+                <field name="price"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <ul>
+                                    <li>
+                                        <field name="name"/>
+                                        <field name="price"/>
+                                    </li>
+                                    <li>
+                                        <field name="description"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="view_restaurant_pizzas_tree" model="ir.ui.view">
+        <field name="name">restaurant.pizzas.tree</field>
+        <field name="model">restaurant.pizzas</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="description"/>
+                <field name="price"/>
+            </tree>
+        </field>
+    </record>
+
+
+
+
+
+    <record id="view_restaurant_sandwiches_form" model="ir.ui.view">
+        <field name="name">restaurant.sandwich.form</field>
+        <field name="model">restaurant.sandwich</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="description"/>
+                        </group>
+                        <group>
+                            <field name="meet"/>
+                            <field name="sauces"/>
+                            <field name="price"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_restaurant_sandwich_kanban" model="ir.ui.view">
+        <field name="name">restaurant.sandwich.kanban</field>
+        <field name="model">restaurant.sandwich</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="id"/>
+                <field name="name"/>
+                <field name="description"/>
+                <field name="price"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <ul>
+                                    <li>
+                                        <field name="name"/>
+                                        <field name="price"/>
+                                    </li>
+                                    <li>
+                                        <field name="description"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="view_restaurant_sandwiches_tree" model="ir.ui.view">
+        <field name="name">restaurant.sandwich.tree</field>
+        <field name="model">restaurant.sandwich</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="description"/>
+                <field name="price"/>
+            </tree>
+        </field>
+    </record>
+    
+
+
+
+
+    <record id="view_restaurant_hotdog_form" model="ir.ui.view">
+        <field name="name">restaurant.hotdog.form</field>
+        <field name="model">restaurant.hotdog</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="description"/>
+                        </group>
+                        <group>
+                            <field name="sauces"/>
+                            <field name="price"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_restaurant_hotdog_kanban" model="ir.ui.view">
+        <field name="name">restaurant.hotdog.kanban</field>
+        <field name="model">restaurant.hotdog</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="id"/>
+                <field name="name"/>
+                <field name="description"/>
+                <field name="price"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <ul>
+                                    <li>
+                                        <field name="name"/>
+                                        <field name="price"/>
+                                    </li>
+                                    <li>
+                                        <field name="description"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="view_restaurant_hotdog_tree" model="ir.ui.view">
+        <field name="name">restaurant.hotdog.tree</field>
+        <field name="model">restaurant.hotdog</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="description"/>
+                <field name="price"/>
+            </tree>
+        </field>
+    </record>
+
+
+
+
+
+    <record id="view_restaurant_others_form" model="ir.ui.view">
+        <field name="name">restaurant.other.form</field>
+        <field name="model">restaurant.other</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="description"/>
+                        </group>
+                        <group>
+                            <field name="price"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_restaurant_others_kanban" model="ir.ui.view">
+        <field name="name">restaurant.other.kanban</field>
+        <field name="model">restaurant.other</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="id"/>
+                <field name="name"/>
+                <field name="description"/>
+                <field name="price"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <ul>
+                                    <li>
+                                        <field name="name"/>
+                                        <field name="price"/>
+                                    </li>
+                                    <li>
+                                        <field name="description"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="view_restaurant_others_tree" model="ir.ui.view">
+        <field name="name">restaurant.other.tree</field>
+        <field name="model">restaurant.other</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="description"/>
+                <field name="price"/>
+            </tree>
+        </field>
+    </record>
+
+
+
+
+
+    <record id="view_restaurant_combo_form" model="ir.ui.view">
+        <field name="name">restaurant.combo.form</field>
+        <field name="model">restaurant.combo</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="burguer"/>
+                        <field name="other"/>
+                    </group>
+                    <group>
+                        <field name="price"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_restaurant_combo_kanban" model="ir.ui.view">
+        <field name="name">restaurant.combo.kanban</field>
+        <field name="model">restaurant.combo</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="id"/>
+                <field name="name"/>
+                <field name="burguer"/>
+                <field name="other"/>
+                <field name="price"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <ul>
+                                    <li>
+                                        <field name="name"/>
+                                        <field name="price"/>
+                                    </li>
+                                    <li>
+                                        <field name="burguer"/>
+                                        <field name="other"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="view_restaurant_combo_tree" model="ir.ui.view">
+        <field name="name">restaurant.combo.tree</field>
+        <field name="model">restaurant.combo</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="burguer"/>
+                <field name="other"/>
+                <field name="price"/>
+            </tree>
+        </field>
+    </record>
+
+
+
+
+
+
+    <record id='restaurant_burguer_action' model='ir.actions.act_window'>
+        <field name="name">Restaurant Burguers</field>
+        <field name="res_model">restaurant.burguer</field>
+        <field name="view_mode">tree,kanban,form</field>
+    </record>
+
+    <record id='restaurant_sandwich_action' model='ir.actions.act_window'>
+        <field name="name">Restaurant Sandwiches</field>
+        <field name="res_model">restaurant.sandwich</field>
+        <field name="view_mode">tree,kanban,form</field>
+    </record>
+
+    <record id='restaurant_pizza_action' model='ir.actions.act_window'>
+        <field name="name">Restaurant Pizzas</field>
+        <field name="res_model">restaurant.pizzas</field>
+        <field name="view_mode">tree,kanban,form</field>
+    </record>
+
+    <record id='restaurant_hotdog_action' model='ir.actions.act_window'>
+        <field name="name">Restaurant Hotdogs</field>
+        <field name="res_model">restaurant.hotdog</field>
+        <field name="view_mode">tree,kanban,form</field>
+    </record>
+
+    <record id='restaurant_other_action' model='ir.actions.act_window'>
+        <field name="name">Restaurant Others</field>
+        <field name="res_model">restaurant.other</field>
+        <field name="view_mode">tree,kanban,form</field>
+    </record>
+
+    <record id='restaurant_combo_action' model='ir.actions.act_window'>
+        <field name="name">Restaurant Burguer Combos</field>
+        <field name="res_model">restaurant.combo</field>
+        <field name="view_mode">tree,kanban,form</field>
+    </record>
+
+    <menuitem
+        id="restaurant_root"
+        name="Card"
+        sequence="10"/>
+
+    <menuitem
+        id="restaurant_burguer_root"
+        name="Burguer"
+        action="restaurant_burguer_action"
+        parent="restaurant_root"
+        sequence="1"/>
+        
+    <menuitem
+        id="restaurant_hotdog_root"
+        name="Hotdog"
+        action="restaurant_hotdog_action"
+        parent="restaurant_root"
+        sequence="4"/>
+        
+    <menuitem
+        id="restaurant_sandwich_root"
+        parent="restaurant_root"
+        action="restaurant_sandwich_action"
+        name="Sandwich"
+        sequence="3"/>
+        
+    <menuitem
+        id="restaurant_pizza_root"
+        name="Pizza"
+        action="restaurant_pizza_action"
+        parent="restaurant_root"
+        sequence="2"/>
+
+    <menuitem
+        id="restaurant_others_root"
+        name="Others"
+        action="restaurant_other_action"
+        parent="restaurant_root"
+        sequence="5"/>
+
+    <menuitem
+        id="restaurant_combo_root"
+        name="Combos"
+        action="restaurant_combo_action"
+        parent="restaurant_root"
+        sequence="6"/>
+</odoo>
